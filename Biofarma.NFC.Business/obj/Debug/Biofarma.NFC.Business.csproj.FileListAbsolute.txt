@@ -1,0 +1,16 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Business.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Business.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\BarcodeLib.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\Biofarma.NFC.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\bin\Debug\BarcodeLib.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Business\obj\Debug\Biofarma.NFC.Business.pdb

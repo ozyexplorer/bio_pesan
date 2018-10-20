@@ -1,0 +1,36 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.csprojResolveAssemblyReference.cache
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.dll

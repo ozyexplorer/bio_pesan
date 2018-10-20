@@ -1,0 +1,14 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.pdb

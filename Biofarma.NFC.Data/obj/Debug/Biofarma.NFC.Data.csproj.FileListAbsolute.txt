@@ -1,0 +1,9 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Data\bin\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Data\bin\Debug\Biofarma.NFC.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Data\obj\Debug\Biofarma.NFC.Data.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Data\obj\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC Reader\Biofarma.NFC.Data\obj\Debug\Biofarma.NFC.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Data\bin\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Data\bin\Debug\Biofarma.NFC.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Data\obj\Debug\Biofarma.NFC.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\NFC USER ADMIN (2)\Biofarma.NFC.Data\obj\Debug\Biofarma.NFC.Data.pdb

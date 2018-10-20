@@ -1,0 +1,106 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\obj\Debug\PesanMakan.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.dll.config
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\EntityFramework.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Newtonsoft.Json.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Business.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\System.Web.Providers.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\BarcodeLib.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Business.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Newtonsoft.Json.xml
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\EntityFramework.xml
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\bin\BarcodeLib.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\obj\Debug\PesanMakan.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan\obj\Debug\PesanMakan.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.dll.config
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\EntityFramework.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.Web.Infrastructure.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Newtonsoft.Json.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Business.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Data.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\System.Web.Providers.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\BarcodeLib.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Business.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Data.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Newtonsoft.Json.xml
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\EntityFramework.xml
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\BarcodeLib.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.csprojResolveAssemblyReference.cache
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.dll.config
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\EntityFramework.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.Web.Infrastructure.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Newtonsoft.Json.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Business.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Data.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\System.Web.Providers.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\BarcodeLib.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Newtonsoft.Json.xml
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\EntityFramework.xml
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\bin\BarcodeLib.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan\obj\Debug\PesanMakan.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\obj\Debug\PesanMakan.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\obj\Debug\PesanMakan.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.dll.config
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\EntityFramework.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Microsoft.Web.Infrastructure.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Newtonsoft.Json.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Business.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Data.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\System.Web.Providers.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\BarcodeLib.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Business.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Newtonsoft.Json.xml
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\EntityFramework.xml
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\BarcodeLib.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\obj\Debug\PesanMakan.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.pdb

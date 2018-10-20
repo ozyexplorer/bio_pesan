@@ -1,0 +1,3198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="startService">
+        <s:complexType />
+      </s:element>
+      <s:element name="startServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="startServiceDekstop">
+        <s:complexType />
+      </s:element>
+      <s:element name="startServiceDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startServiceDekstopResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="initCardUID">
+        <s:complexType />
+      </s:element>
+      <s:element name="initCardUIDResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dateReg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dateBok" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTableResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectDevice">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectDeviceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="btnWrite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tbValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="btnWriteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListReaders">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListReadersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListReadersResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="connectCard">
+        <s:complexType />
+      </s:element>
+      <s:element name="connectCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="connectCardResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submitText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Text" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Block" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submitTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="submitTextResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Close">
+        <s:complexType />
+      </s:element>
+      <s:element name="CloseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="verifyCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Block" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verifyCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verifyCardResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="readBlock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Block" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="readBlockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="readBlockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InputProses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nama" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="array" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InputProsesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InputProsesFromCalendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listObj" type="tns:ArrayOfCalendarEventObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCalendarEventObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CalendarEventObj" nillable="true" type="tns:CalendarEventObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CalendarEventObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="start" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="menu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="startHour" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="endHour" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InputProsesFromCalendarResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InputMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="array" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InputMenuResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setMonthRecap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bulan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setMonthRecapResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setMonth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bulan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setMonthResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetListOrder">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetListOrderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMenu">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMenuResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecapOrder">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecapOrderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetReconcile">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetReconcileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckTokenResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserDataDekstop">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserDataDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDataDekstopResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tgl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="menu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelMenuResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tgl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="menu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jam" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMenuResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CekMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Period" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CekMenuResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchNik">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchNikResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RegCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nama" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegCardResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RegCardDekstop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nama" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegCardDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegCardDekstopResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nama" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="role" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DelOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tgl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelOrderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="loginWithCardUID">
+        <s:complexType />
+      </s:element>
+      <s:element name="loginWithCardUIDResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="loginWithCardUIDDekstop">
+        <s:complexType />
+      </s:element>
+      <s:element name="loginWithCardUIDDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginWithCardUIDDekstopResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginWithUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginWithUserNameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="loginWithUserNameDekstop">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginWithUserNameDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginWithUserNameDekstopResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMenuBooking">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMenuBookingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMenuBookingCalendar">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMenuBookingCalendarResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNikNama">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNikNamaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNikNamaDekstop">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNikNamaDekstopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNikNamaDekstopResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNikNamaAct">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNikNamaActResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RegMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nama" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegMemberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserByNIK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pernr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByNIKResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearSessionInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearSessionInfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearAllSession">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClearAllSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTokenTicketing">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTokenTicketingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDateTimeServer">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDateTimeServerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="int" type="s:int" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="startServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:startService" />
+  </wsdl:message>
+  <wsdl:message name="startServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:startServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="startServiceDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:startServiceDekstop" />
+  </wsdl:message>
+  <wsdl:message name="startServiceDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:startServiceDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="initCardUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:initCardUID" />
+  </wsdl:message>
+  <wsdl:message name="initCardUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:initCardUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTable" />
+  </wsdl:message>
+  <wsdl:message name="GetTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectDeviceSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectDevice" />
+  </wsdl:message>
+  <wsdl:message name="SelectDeviceSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="btnWriteSoapIn">
+    <wsdl:part name="parameters" element="tns:btnWrite" />
+  </wsdl:message>
+  <wsdl:message name="btnWriteSoapOut">
+    <wsdl:part name="parameters" element="tns:btnWriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListReadersSoapIn">
+    <wsdl:part name="parameters" element="tns:ListReaders" />
+  </wsdl:message>
+  <wsdl:message name="ListReadersSoapOut">
+    <wsdl:part name="parameters" element="tns:ListReadersResponse" />
+  </wsdl:message>
+  <wsdl:message name="connectCardSoapIn">
+    <wsdl:part name="parameters" element="tns:connectCard" />
+  </wsdl:message>
+  <wsdl:message name="connectCardSoapOut">
+    <wsdl:part name="parameters" element="tns:connectCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitTextSoapIn">
+    <wsdl:part name="parameters" element="tns:submitText" />
+  </wsdl:message>
+  <wsdl:message name="submitTextSoapOut">
+    <wsdl:part name="parameters" element="tns:submitTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseSoapIn">
+    <wsdl:part name="parameters" element="tns:Close" />
+  </wsdl:message>
+  <wsdl:message name="CloseSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseResponse" />
+  </wsdl:message>
+  <wsdl:message name="verifyCardSoapIn">
+    <wsdl:part name="parameters" element="tns:verifyCard" />
+  </wsdl:message>
+  <wsdl:message name="verifyCardSoapOut">
+    <wsdl:part name="parameters" element="tns:verifyCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="readBlockSoapIn">
+    <wsdl:part name="parameters" element="tns:readBlock" />
+  </wsdl:message>
+  <wsdl:message name="readBlockSoapOut">
+    <wsdl:part name="parameters" element="tns:readBlockResponse" />
+  </wsdl:message>
+  <wsdl:message name="InputProsesSoapIn">
+    <wsdl:part name="parameters" element="tns:InputProses" />
+  </wsdl:message>
+  <wsdl:message name="InputProsesSoapOut">
+    <wsdl:part name="parameters" element="tns:InputProsesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InputProsesFromCalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:InputProsesFromCalendar" />
+  </wsdl:message>
+  <wsdl:message name="InputProsesFromCalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:InputProsesFromCalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="InputMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:InputMenu" />
+  </wsdl:message>
+  <wsdl:message name="InputMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:InputMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapSoapIn">
+    <wsdl:part name="parameters" element="tns:setMonthRecap" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapSoapOut">
+    <wsdl:part name="parameters" element="tns:setMonthRecapResponse" />
+  </wsdl:message>
+  <wsdl:message name="setMonthSoapIn">
+    <wsdl:part name="parameters" element="tns:setMonth" />
+  </wsdl:message>
+  <wsdl:message name="setMonthSoapOut">
+    <wsdl:part name="parameters" element="tns:setMonthResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOrder" />
+  </wsdl:message>
+  <wsdl:message name="GetListOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenu" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecapOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:RecapOrder" />
+  </wsdl:message>
+  <wsdl:message name="RecapOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:RecapOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReconcileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReconcile" />
+  </wsdl:message>
+  <wsdl:message name="GetReconcileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReconcileResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckToken" />
+  </wsdl:message>
+  <wsdl:message name="CheckTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserData" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDataDekstop" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDataDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:DelMenu" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:DelMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMenu" />
+  </wsdl:message>
+  <wsdl:message name="AddMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="CekMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:CekMenu" />
+  </wsdl:message>
+  <wsdl:message name="CekMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:CekMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchNikSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchNik" />
+  </wsdl:message>
+  <wsdl:message name="SearchNikSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchNikResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegCardSoapIn">
+    <wsdl:part name="parameters" element="tns:RegCard" />
+  </wsdl:message>
+  <wsdl:message name="RegCardSoapOut">
+    <wsdl:part name="parameters" element="tns:RegCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegCardDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:RegCardDekstop" />
+  </wsdl:message>
+  <wsdl:message name="RegCardDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:RegCardDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelDataSoapIn">
+    <wsdl:part name="parameters" element="tns:DelData" />
+  </wsdl:message>
+  <wsdl:message name="DelDataSoapOut">
+    <wsdl:part name="parameters" element="tns:DelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:DelOrder" />
+  </wsdl:message>
+  <wsdl:message name="DelOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:DelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginWithCardUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:loginWithCardUID" />
+  </wsdl:message>
+  <wsdl:message name="loginWithCardUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:loginWithCardUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginWithCardUIDDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:loginWithCardUIDDekstop" />
+  </wsdl:message>
+  <wsdl:message name="loginWithCardUIDDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:loginWithCardUIDDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:loginWithUserName" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:loginWithUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:loginWithUserNameDekstop" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:loginWithUserNameDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuBooking" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingCalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMenuBookingCalendar" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingCalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMenuBookingCalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNikNama" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNikNamaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaDekstopSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNikNamaDekstop" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaDekstopSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNikNamaDekstopResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaActSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNikNamaAct" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaActSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNikNamaActResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:RegMember" />
+  </wsdl:message>
+  <wsdl:message name="RegMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:RegMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByNIKSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByNIK" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByNIKSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByNIKResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearSessionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearSessionInfo" />
+  </wsdl:message>
+  <wsdl:message name="ClearSessionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearSessionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearAllSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearAllSession" />
+  </wsdl:message>
+  <wsdl:message name="ClearAllSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearAllSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTokenTicketingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTokenTicketing" />
+  </wsdl:message>
+  <wsdl:message name="GetTokenTicketingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTokenTicketingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDateTimeServerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDateTimeServer" />
+  </wsdl:message>
+  <wsdl:message name="GetDateTimeServerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDateTimeServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="startServiceHttpGetIn" />
+  <wsdl:message name="startServiceHttpGetOut" />
+  <wsdl:message name="startServiceDekstopHttpGetIn" />
+  <wsdl:message name="startServiceDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="initCardUIDHttpGetIn" />
+  <wsdl:message name="initCardUIDHttpGetOut" />
+  <wsdl:message name="GetTableHttpGetIn">
+    <wsdl:part name="dateReg" type="s:string" />
+    <wsdl:part name="dateBok" type="s:string" />
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTableHttpGetOut" />
+  <wsdl:message name="SelectDeviceHttpGetIn" />
+  <wsdl:message name="SelectDeviceHttpGetOut" />
+  <wsdl:message name="btnWriteHttpGetIn">
+    <wsdl:part name="tbValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="btnWriteHttpGetOut" />
+  <wsdl:message name="ListReadersHttpGetIn" />
+  <wsdl:message name="ListReadersHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="connectCardHttpGetIn" />
+  <wsdl:message name="connectCardHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="submitTextHttpGetIn">
+    <wsdl:part name="Text" type="s:string" />
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="submitTextHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="CloseHttpGetIn" />
+  <wsdl:message name="CloseHttpGetOut" />
+  <wsdl:message name="verifyCardHttpGetIn">
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="verifyCardHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="readBlockHttpGetIn">
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="readBlockHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapHttpGetIn">
+    <wsdl:part name="bulan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapHttpGetOut" />
+  <wsdl:message name="setMonthHttpGetIn">
+    <wsdl:part name="bulan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthHttpGetOut" />
+  <wsdl:message name="GetListOrderHttpGetIn" />
+  <wsdl:message name="GetListOrderHttpGetOut" />
+  <wsdl:message name="GetMenuHttpGetIn" />
+  <wsdl:message name="GetMenuHttpGetOut" />
+  <wsdl:message name="RecapOrderHttpGetIn" />
+  <wsdl:message name="RecapOrderHttpGetOut" />
+  <wsdl:message name="GetReconcileHttpGetIn" />
+  <wsdl:message name="GetReconcileHttpGetOut" />
+  <wsdl:message name="CheckTokenHttpGetIn">
+    <wsdl:part name="token" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckTokenHttpGetOut" />
+  <wsdl:message name="GetUserDataHttpGetIn" />
+  <wsdl:message name="GetUserDataHttpGetOut" />
+  <wsdl:message name="GetUserDataDekstopHttpGetIn" />
+  <wsdl:message name="GetUserDataDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuHttpGetIn">
+    <wsdl:part name="tgl" type="s:string" />
+    <wsdl:part name="menu" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuHttpGetOut" />
+  <wsdl:message name="AddMenuHttpGetIn">
+    <wsdl:part name="tgl" type="s:string" />
+    <wsdl:part name="menu" type="s:string" />
+    <wsdl:part name="jam" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddMenuHttpGetOut" />
+  <wsdl:message name="CekMenuHttpGetIn">
+    <wsdl:part name="Period" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CekMenuHttpGetOut" />
+  <wsdl:message name="SearchNikHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SearchNikHttpGetOut" />
+  <wsdl:message name="RegCardHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegCardHttpGetOut" />
+  <wsdl:message name="RegCardDekstopHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegCardDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DelDataHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelDataHttpGetOut" />
+  <wsdl:message name="DelOrderHttpGetIn">
+    <wsdl:part name="tgl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelOrderHttpGetOut" />
+  <wsdl:message name="loginWithCardUIDHttpGetIn" />
+  <wsdl:message name="loginWithCardUIDHttpGetOut" />
+  <wsdl:message name="loginWithCardUIDDekstopHttpGetIn" />
+  <wsdl:message name="loginWithCardUIDDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameHttpGetOut" />
+  <wsdl:message name="loginWithUserNameDekstopHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingHttpGetIn" />
+  <wsdl:message name="GetMenuBookingHttpGetOut" />
+  <wsdl:message name="GetMenuBookingCalendarHttpGetIn" />
+  <wsdl:message name="GetMenuBookingCalendarHttpGetOut" />
+  <wsdl:message name="GetNikNamaHttpGetIn" />
+  <wsdl:message name="GetNikNamaHttpGetOut" />
+  <wsdl:message name="GetNikNamaDekstopHttpGetIn" />
+  <wsdl:message name="GetNikNamaDekstopHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaActHttpGetIn" />
+  <wsdl:message name="GetNikNamaActHttpGetOut" />
+  <wsdl:message name="RegMemberHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegMemberHttpGetOut" />
+  <wsdl:message name="GetUserByNIKHttpGetIn">
+    <wsdl:part name="pernr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByNIKHttpGetOut" />
+  <wsdl:message name="ClearSessionInfoHttpGetIn" />
+  <wsdl:message name="ClearSessionInfoHttpGetOut" />
+  <wsdl:message name="ClearAllSessionHttpGetIn" />
+  <wsdl:message name="ClearAllSessionHttpGetOut" />
+  <wsdl:message name="GetTokenTicketingHttpGetIn" />
+  <wsdl:message name="GetTokenTicketingHttpGetOut" />
+  <wsdl:message name="GetDateTimeServerHttpGetIn" />
+  <wsdl:message name="GetDateTimeServerHttpGetOut" />
+  <wsdl:message name="startServiceHttpPostIn" />
+  <wsdl:message name="startServiceHttpPostOut" />
+  <wsdl:message name="startServiceDekstopHttpPostIn" />
+  <wsdl:message name="startServiceDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="initCardUIDHttpPostIn" />
+  <wsdl:message name="initCardUIDHttpPostOut" />
+  <wsdl:message name="GetTableHttpPostIn">
+    <wsdl:part name="dateReg" type="s:string" />
+    <wsdl:part name="dateBok" type="s:string" />
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTableHttpPostOut" />
+  <wsdl:message name="SelectDeviceHttpPostIn" />
+  <wsdl:message name="SelectDeviceHttpPostOut" />
+  <wsdl:message name="btnWriteHttpPostIn">
+    <wsdl:part name="tbValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="btnWriteHttpPostOut" />
+  <wsdl:message name="ListReadersHttpPostIn" />
+  <wsdl:message name="ListReadersHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="connectCardHttpPostIn" />
+  <wsdl:message name="connectCardHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="submitTextHttpPostIn">
+    <wsdl:part name="Text" type="s:string" />
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="submitTextHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="CloseHttpPostIn" />
+  <wsdl:message name="CloseHttpPostOut" />
+  <wsdl:message name="verifyCardHttpPostIn">
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="verifyCardHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="readBlockHttpPostIn">
+    <wsdl:part name="Block" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="readBlockHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapHttpPostIn">
+    <wsdl:part name="bulan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthRecapHttpPostOut" />
+  <wsdl:message name="setMonthHttpPostIn">
+    <wsdl:part name="bulan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setMonthHttpPostOut" />
+  <wsdl:message name="GetListOrderHttpPostIn" />
+  <wsdl:message name="GetListOrderHttpPostOut" />
+  <wsdl:message name="GetMenuHttpPostIn" />
+  <wsdl:message name="GetMenuHttpPostOut" />
+  <wsdl:message name="RecapOrderHttpPostIn" />
+  <wsdl:message name="RecapOrderHttpPostOut" />
+  <wsdl:message name="GetReconcileHttpPostIn" />
+  <wsdl:message name="GetReconcileHttpPostOut" />
+  <wsdl:message name="CheckTokenHttpPostIn">
+    <wsdl:part name="token" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckTokenHttpPostOut" />
+  <wsdl:message name="GetUserDataHttpPostIn" />
+  <wsdl:message name="GetUserDataHttpPostOut" />
+  <wsdl:message name="GetUserDataDekstopHttpPostIn" />
+  <wsdl:message name="GetUserDataDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuHttpPostIn">
+    <wsdl:part name="tgl" type="s:string" />
+    <wsdl:part name="menu" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelMenuHttpPostOut" />
+  <wsdl:message name="AddMenuHttpPostIn">
+    <wsdl:part name="tgl" type="s:string" />
+    <wsdl:part name="menu" type="s:string" />
+    <wsdl:part name="jam" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddMenuHttpPostOut" />
+  <wsdl:message name="CekMenuHttpPostIn">
+    <wsdl:part name="Period" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CekMenuHttpPostOut" />
+  <wsdl:message name="SearchNikHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SearchNikHttpPostOut" />
+  <wsdl:message name="RegCardHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegCardHttpPostOut" />
+  <wsdl:message name="RegCardDekstopHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegCardDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DelDataHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardid" type="s:string" />
+    <wsdl:part name="role" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelDataHttpPostOut" />
+  <wsdl:message name="DelOrderHttpPostIn">
+    <wsdl:part name="tgl" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DelOrderHttpPostOut" />
+  <wsdl:message name="loginWithCardUIDHttpPostIn" />
+  <wsdl:message name="loginWithCardUIDHttpPostOut" />
+  <wsdl:message name="loginWithCardUIDDekstopHttpPostIn" />
+  <wsdl:message name="loginWithCardUIDDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameHttpPostOut" />
+  <wsdl:message name="loginWithUserNameDekstopHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="loginWithUserNameDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMenuBookingHttpPostIn" />
+  <wsdl:message name="GetMenuBookingHttpPostOut" />
+  <wsdl:message name="GetMenuBookingCalendarHttpPostIn" />
+  <wsdl:message name="GetMenuBookingCalendarHttpPostOut" />
+  <wsdl:message name="GetNikNamaHttpPostIn" />
+  <wsdl:message name="GetNikNamaHttpPostOut" />
+  <wsdl:message name="GetNikNamaDekstopHttpPostIn" />
+  <wsdl:message name="GetNikNamaDekstopHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetNikNamaActHttpPostIn" />
+  <wsdl:message name="GetNikNamaActHttpPostOut" />
+  <wsdl:message name="RegMemberHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+    <wsdl:part name="nama" type="s:string" />
+    <wsdl:part name="cardID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegMemberHttpPostOut" />
+  <wsdl:message name="GetUserByNIKHttpPostIn">
+    <wsdl:part name="pernr" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByNIKHttpPostOut" />
+  <wsdl:message name="ClearSessionInfoHttpPostIn" />
+  <wsdl:message name="ClearSessionInfoHttpPostOut" />
+  <wsdl:message name="ClearAllSessionHttpPostIn" />
+  <wsdl:message name="ClearAllSessionHttpPostOut" />
+  <wsdl:message name="GetTokenTicketingHttpPostIn" />
+  <wsdl:message name="GetTokenTicketingHttpPostOut" />
+  <wsdl:message name="GetDateTimeServerHttpPostIn" />
+  <wsdl:message name="GetDateTimeServerHttpPostOut" />
+  <wsdl:portType name="GetSetServiceSoap">
+    <wsdl:operation name="startService">
+      <wsdl:input message="tns:startServiceSoapIn" />
+      <wsdl:output message="tns:startServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <wsdl:input message="tns:startServiceDekstopSoapIn" />
+      <wsdl:output message="tns:startServiceDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <wsdl:input message="tns:initCardUIDSoapIn" />
+      <wsdl:output message="tns:initCardUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <wsdl:input message="tns:GetTableSoapIn" />
+      <wsdl:output message="tns:GetTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <wsdl:input message="tns:SelectDeviceSoapIn" />
+      <wsdl:output message="tns:SelectDeviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <wsdl:input message="tns:btnWriteSoapIn" />
+      <wsdl:output message="tns:btnWriteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <wsdl:input message="tns:ListReadersSoapIn" />
+      <wsdl:output message="tns:ListReadersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <wsdl:input message="tns:connectCardSoapIn" />
+      <wsdl:output message="tns:connectCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <wsdl:input message="tns:submitTextSoapIn" />
+      <wsdl:output message="tns:submitTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <wsdl:input message="tns:CloseSoapIn" />
+      <wsdl:output message="tns:CloseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <wsdl:input message="tns:verifyCardSoapIn" />
+      <wsdl:output message="tns:verifyCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <wsdl:input message="tns:readBlockSoapIn" />
+      <wsdl:output message="tns:readBlockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InputProses">
+      <wsdl:input message="tns:InputProsesSoapIn" />
+      <wsdl:output message="tns:InputProsesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InputProsesFromCalendar">
+      <wsdl:input message="tns:InputProsesFromCalendarSoapIn" />
+      <wsdl:output message="tns:InputProsesFromCalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InputMenu">
+      <wsdl:input message="tns:InputMenuSoapIn" />
+      <wsdl:output message="tns:InputMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <wsdl:input message="tns:setMonthRecapSoapIn" />
+      <wsdl:output message="tns:setMonthRecapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <wsdl:input message="tns:setMonthSoapIn" />
+      <wsdl:output message="tns:setMonthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <wsdl:input message="tns:GetListOrderSoapIn" />
+      <wsdl:output message="tns:GetListOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <wsdl:input message="tns:GetMenuSoapIn" />
+      <wsdl:output message="tns:GetMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <wsdl:input message="tns:RecapOrderSoapIn" />
+      <wsdl:output message="tns:RecapOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <wsdl:input message="tns:GetReconcileSoapIn" />
+      <wsdl:output message="tns:GetReconcileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <wsdl:input message="tns:CheckTokenSoapIn" />
+      <wsdl:output message="tns:CheckTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <wsdl:input message="tns:GetUserDataSoapIn" />
+      <wsdl:output message="tns:GetUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <wsdl:input message="tns:GetUserDataDekstopSoapIn" />
+      <wsdl:output message="tns:GetUserDataDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <wsdl:input message="tns:DelMenuSoapIn" />
+      <wsdl:output message="tns:DelMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <wsdl:input message="tns:AddMenuSoapIn" />
+      <wsdl:output message="tns:AddMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <wsdl:input message="tns:CekMenuSoapIn" />
+      <wsdl:output message="tns:CekMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <wsdl:input message="tns:SearchNikSoapIn" />
+      <wsdl:output message="tns:SearchNikSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <wsdl:input message="tns:RegCardSoapIn" />
+      <wsdl:output message="tns:RegCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <wsdl:input message="tns:RegCardDekstopSoapIn" />
+      <wsdl:output message="tns:RegCardDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <wsdl:input message="tns:DelDataSoapIn" />
+      <wsdl:output message="tns:DelDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <wsdl:input message="tns:DelOrderSoapIn" />
+      <wsdl:output message="tns:DelOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <wsdl:input message="tns:loginWithCardUIDSoapIn" />
+      <wsdl:output message="tns:loginWithCardUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <wsdl:input message="tns:loginWithCardUIDDekstopSoapIn" />
+      <wsdl:output message="tns:loginWithCardUIDDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <wsdl:input message="tns:loginWithUserNameSoapIn" />
+      <wsdl:output message="tns:loginWithUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <wsdl:input message="tns:loginWithUserNameDekstopSoapIn" />
+      <wsdl:output message="tns:loginWithUserNameDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <wsdl:input message="tns:GetMenuBookingSoapIn" />
+      <wsdl:output message="tns:GetMenuBookingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <wsdl:input message="tns:GetMenuBookingCalendarSoapIn" />
+      <wsdl:output message="tns:GetMenuBookingCalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <wsdl:input message="tns:GetNikNamaSoapIn" />
+      <wsdl:output message="tns:GetNikNamaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <wsdl:input message="tns:GetNikNamaDekstopSoapIn" />
+      <wsdl:output message="tns:GetNikNamaDekstopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <wsdl:input message="tns:GetNikNamaActSoapIn" />
+      <wsdl:output message="tns:GetNikNamaActSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <wsdl:input message="tns:RegMemberSoapIn" />
+      <wsdl:output message="tns:RegMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <wsdl:input message="tns:GetUserByNIKSoapIn" />
+      <wsdl:output message="tns:GetUserByNIKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <wsdl:input message="tns:ClearSessionInfoSoapIn" />
+      <wsdl:output message="tns:ClearSessionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <wsdl:input message="tns:ClearAllSessionSoapIn" />
+      <wsdl:output message="tns:ClearAllSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <wsdl:input message="tns:GetTokenTicketingSoapIn" />
+      <wsdl:output message="tns:GetTokenTicketingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <wsdl:input message="tns:GetDateTimeServerSoapIn" />
+      <wsdl:output message="tns:GetDateTimeServerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetSetServiceHttpGet">
+    <wsdl:operation name="startService">
+      <wsdl:input message="tns:startServiceHttpGetIn" />
+      <wsdl:output message="tns:startServiceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <wsdl:input message="tns:startServiceDekstopHttpGetIn" />
+      <wsdl:output message="tns:startServiceDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <wsdl:input message="tns:initCardUIDHttpGetIn" />
+      <wsdl:output message="tns:initCardUIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <wsdl:input message="tns:GetTableHttpGetIn" />
+      <wsdl:output message="tns:GetTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <wsdl:input message="tns:SelectDeviceHttpGetIn" />
+      <wsdl:output message="tns:SelectDeviceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <wsdl:input message="tns:btnWriteHttpGetIn" />
+      <wsdl:output message="tns:btnWriteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <wsdl:input message="tns:ListReadersHttpGetIn" />
+      <wsdl:output message="tns:ListReadersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <wsdl:input message="tns:connectCardHttpGetIn" />
+      <wsdl:output message="tns:connectCardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <wsdl:input message="tns:submitTextHttpGetIn" />
+      <wsdl:output message="tns:submitTextHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <wsdl:input message="tns:CloseHttpGetIn" />
+      <wsdl:output message="tns:CloseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <wsdl:input message="tns:verifyCardHttpGetIn" />
+      <wsdl:output message="tns:verifyCardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <wsdl:input message="tns:readBlockHttpGetIn" />
+      <wsdl:output message="tns:readBlockHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <wsdl:input message="tns:setMonthRecapHttpGetIn" />
+      <wsdl:output message="tns:setMonthRecapHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <wsdl:input message="tns:setMonthHttpGetIn" />
+      <wsdl:output message="tns:setMonthHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <wsdl:input message="tns:GetListOrderHttpGetIn" />
+      <wsdl:output message="tns:GetListOrderHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <wsdl:input message="tns:GetMenuHttpGetIn" />
+      <wsdl:output message="tns:GetMenuHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <wsdl:input message="tns:RecapOrderHttpGetIn" />
+      <wsdl:output message="tns:RecapOrderHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <wsdl:input message="tns:GetReconcileHttpGetIn" />
+      <wsdl:output message="tns:GetReconcileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <wsdl:input message="tns:CheckTokenHttpGetIn" />
+      <wsdl:output message="tns:CheckTokenHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <wsdl:input message="tns:GetUserDataHttpGetIn" />
+      <wsdl:output message="tns:GetUserDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <wsdl:input message="tns:GetUserDataDekstopHttpGetIn" />
+      <wsdl:output message="tns:GetUserDataDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <wsdl:input message="tns:DelMenuHttpGetIn" />
+      <wsdl:output message="tns:DelMenuHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <wsdl:input message="tns:AddMenuHttpGetIn" />
+      <wsdl:output message="tns:AddMenuHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <wsdl:input message="tns:CekMenuHttpGetIn" />
+      <wsdl:output message="tns:CekMenuHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <wsdl:input message="tns:SearchNikHttpGetIn" />
+      <wsdl:output message="tns:SearchNikHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <wsdl:input message="tns:RegCardHttpGetIn" />
+      <wsdl:output message="tns:RegCardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <wsdl:input message="tns:RegCardDekstopHttpGetIn" />
+      <wsdl:output message="tns:RegCardDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <wsdl:input message="tns:DelDataHttpGetIn" />
+      <wsdl:output message="tns:DelDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <wsdl:input message="tns:DelOrderHttpGetIn" />
+      <wsdl:output message="tns:DelOrderHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <wsdl:input message="tns:loginWithCardUIDHttpGetIn" />
+      <wsdl:output message="tns:loginWithCardUIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <wsdl:input message="tns:loginWithCardUIDDekstopHttpGetIn" />
+      <wsdl:output message="tns:loginWithCardUIDDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <wsdl:input message="tns:loginWithUserNameHttpGetIn" />
+      <wsdl:output message="tns:loginWithUserNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <wsdl:input message="tns:loginWithUserNameDekstopHttpGetIn" />
+      <wsdl:output message="tns:loginWithUserNameDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <wsdl:input message="tns:GetMenuBookingHttpGetIn" />
+      <wsdl:output message="tns:GetMenuBookingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <wsdl:input message="tns:GetMenuBookingCalendarHttpGetIn" />
+      <wsdl:output message="tns:GetMenuBookingCalendarHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <wsdl:input message="tns:GetNikNamaHttpGetIn" />
+      <wsdl:output message="tns:GetNikNamaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <wsdl:input message="tns:GetNikNamaDekstopHttpGetIn" />
+      <wsdl:output message="tns:GetNikNamaDekstopHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <wsdl:input message="tns:GetNikNamaActHttpGetIn" />
+      <wsdl:output message="tns:GetNikNamaActHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <wsdl:input message="tns:RegMemberHttpGetIn" />
+      <wsdl:output message="tns:RegMemberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <wsdl:input message="tns:GetUserByNIKHttpGetIn" />
+      <wsdl:output message="tns:GetUserByNIKHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <wsdl:input message="tns:ClearSessionInfoHttpGetIn" />
+      <wsdl:output message="tns:ClearSessionInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <wsdl:input message="tns:ClearAllSessionHttpGetIn" />
+      <wsdl:output message="tns:ClearAllSessionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <wsdl:input message="tns:GetTokenTicketingHttpGetIn" />
+      <wsdl:output message="tns:GetTokenTicketingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <wsdl:input message="tns:GetDateTimeServerHttpGetIn" />
+      <wsdl:output message="tns:GetDateTimeServerHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetSetServiceHttpPost">
+    <wsdl:operation name="startService">
+      <wsdl:input message="tns:startServiceHttpPostIn" />
+      <wsdl:output message="tns:startServiceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <wsdl:input message="tns:startServiceDekstopHttpPostIn" />
+      <wsdl:output message="tns:startServiceDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <wsdl:input message="tns:initCardUIDHttpPostIn" />
+      <wsdl:output message="tns:initCardUIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <wsdl:input message="tns:GetTableHttpPostIn" />
+      <wsdl:output message="tns:GetTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <wsdl:input message="tns:SelectDeviceHttpPostIn" />
+      <wsdl:output message="tns:SelectDeviceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <wsdl:input message="tns:btnWriteHttpPostIn" />
+      <wsdl:output message="tns:btnWriteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <wsdl:input message="tns:ListReadersHttpPostIn" />
+      <wsdl:output message="tns:ListReadersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <wsdl:input message="tns:connectCardHttpPostIn" />
+      <wsdl:output message="tns:connectCardHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <wsdl:input message="tns:submitTextHttpPostIn" />
+      <wsdl:output message="tns:submitTextHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <wsdl:input message="tns:CloseHttpPostIn" />
+      <wsdl:output message="tns:CloseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <wsdl:input message="tns:verifyCardHttpPostIn" />
+      <wsdl:output message="tns:verifyCardHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <wsdl:input message="tns:readBlockHttpPostIn" />
+      <wsdl:output message="tns:readBlockHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <wsdl:input message="tns:setMonthRecapHttpPostIn" />
+      <wsdl:output message="tns:setMonthRecapHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <wsdl:input message="tns:setMonthHttpPostIn" />
+      <wsdl:output message="tns:setMonthHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <wsdl:input message="tns:GetListOrderHttpPostIn" />
+      <wsdl:output message="tns:GetListOrderHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <wsdl:input message="tns:GetMenuHttpPostIn" />
+      <wsdl:output message="tns:GetMenuHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <wsdl:input message="tns:RecapOrderHttpPostIn" />
+      <wsdl:output message="tns:RecapOrderHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <wsdl:input message="tns:GetReconcileHttpPostIn" />
+      <wsdl:output message="tns:GetReconcileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <wsdl:input message="tns:CheckTokenHttpPostIn" />
+      <wsdl:output message="tns:CheckTokenHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <wsdl:input message="tns:GetUserDataHttpPostIn" />
+      <wsdl:output message="tns:GetUserDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <wsdl:input message="tns:GetUserDataDekstopHttpPostIn" />
+      <wsdl:output message="tns:GetUserDataDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <wsdl:input message="tns:DelMenuHttpPostIn" />
+      <wsdl:output message="tns:DelMenuHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <wsdl:input message="tns:AddMenuHttpPostIn" />
+      <wsdl:output message="tns:AddMenuHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <wsdl:input message="tns:CekMenuHttpPostIn" />
+      <wsdl:output message="tns:CekMenuHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <wsdl:input message="tns:SearchNikHttpPostIn" />
+      <wsdl:output message="tns:SearchNikHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <wsdl:input message="tns:RegCardHttpPostIn" />
+      <wsdl:output message="tns:RegCardHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <wsdl:input message="tns:RegCardDekstopHttpPostIn" />
+      <wsdl:output message="tns:RegCardDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <wsdl:input message="tns:DelDataHttpPostIn" />
+      <wsdl:output message="tns:DelDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <wsdl:input message="tns:DelOrderHttpPostIn" />
+      <wsdl:output message="tns:DelOrderHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <wsdl:input message="tns:loginWithCardUIDHttpPostIn" />
+      <wsdl:output message="tns:loginWithCardUIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <wsdl:input message="tns:loginWithCardUIDDekstopHttpPostIn" />
+      <wsdl:output message="tns:loginWithCardUIDDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <wsdl:input message="tns:loginWithUserNameHttpPostIn" />
+      <wsdl:output message="tns:loginWithUserNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <wsdl:input message="tns:loginWithUserNameDekstopHttpPostIn" />
+      <wsdl:output message="tns:loginWithUserNameDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <wsdl:input message="tns:GetMenuBookingHttpPostIn" />
+      <wsdl:output message="tns:GetMenuBookingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <wsdl:input message="tns:GetMenuBookingCalendarHttpPostIn" />
+      <wsdl:output message="tns:GetMenuBookingCalendarHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <wsdl:input message="tns:GetNikNamaHttpPostIn" />
+      <wsdl:output message="tns:GetNikNamaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <wsdl:input message="tns:GetNikNamaDekstopHttpPostIn" />
+      <wsdl:output message="tns:GetNikNamaDekstopHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <wsdl:input message="tns:GetNikNamaActHttpPostIn" />
+      <wsdl:output message="tns:GetNikNamaActHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <wsdl:input message="tns:RegMemberHttpPostIn" />
+      <wsdl:output message="tns:RegMemberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <wsdl:input message="tns:GetUserByNIKHttpPostIn" />
+      <wsdl:output message="tns:GetUserByNIKHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <wsdl:input message="tns:ClearSessionInfoHttpPostIn" />
+      <wsdl:output message="tns:ClearSessionInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <wsdl:input message="tns:ClearAllSessionHttpPostIn" />
+      <wsdl:output message="tns:ClearAllSessionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <wsdl:input message="tns:GetTokenTicketingHttpPostIn" />
+      <wsdl:output message="tns:GetTokenTicketingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <wsdl:input message="tns:GetDateTimeServerHttpPostIn" />
+      <wsdl:output message="tns:GetDateTimeServerHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetSetServiceSoap" type="tns:GetSetServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="startService">
+      <soap:operation soapAction="http://tempuri.org/startService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <soap:operation soapAction="http://tempuri.org/startServiceDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <soap:operation soapAction="http://tempuri.org/initCardUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <soap:operation soapAction="http://tempuri.org/GetTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <soap:operation soapAction="http://tempuri.org/SelectDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <soap:operation soapAction="http://tempuri.org/btnWrite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <soap:operation soapAction="http://tempuri.org/ListReaders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <soap:operation soapAction="http://tempuri.org/connectCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <soap:operation soapAction="http://tempuri.org/submitText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <soap:operation soapAction="http://tempuri.org/Close" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <soap:operation soapAction="http://tempuri.org/verifyCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <soap:operation soapAction="http://tempuri.org/readBlock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputProses">
+      <soap:operation soapAction="http://tempuri.org/InputProses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputProsesFromCalendar">
+      <soap:operation soapAction="http://tempuri.org/InputProsesFromCalendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputMenu">
+      <soap:operation soapAction="http://tempuri.org/InputMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <soap:operation soapAction="http://tempuri.org/setMonthRecap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <soap:operation soapAction="http://tempuri.org/setMonth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <soap:operation soapAction="http://tempuri.org/GetListOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <soap:operation soapAction="http://tempuri.org/GetMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <soap:operation soapAction="http://tempuri.org/RecapOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <soap:operation soapAction="http://tempuri.org/GetReconcile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <soap:operation soapAction="http://tempuri.org/CheckToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <soap:operation soapAction="http://tempuri.org/GetUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <soap:operation soapAction="http://tempuri.org/GetUserDataDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <soap:operation soapAction="http://tempuri.org/DelMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <soap:operation soapAction="http://tempuri.org/AddMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <soap:operation soapAction="http://tempuri.org/CekMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <soap:operation soapAction="http://tempuri.org/SearchNik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <soap:operation soapAction="http://tempuri.org/RegCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <soap:operation soapAction="http://tempuri.org/RegCardDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <soap:operation soapAction="http://tempuri.org/DelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <soap:operation soapAction="http://tempuri.org/DelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <soap:operation soapAction="http://tempuri.org/loginWithCardUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <soap:operation soapAction="http://tempuri.org/loginWithCardUIDDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <soap:operation soapAction="http://tempuri.org/loginWithUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <soap:operation soapAction="http://tempuri.org/loginWithUserNameDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <soap:operation soapAction="http://tempuri.org/GetMenuBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <soap:operation soapAction="http://tempuri.org/GetMenuBookingCalendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <soap:operation soapAction="http://tempuri.org/GetNikNama" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <soap:operation soapAction="http://tempuri.org/GetNikNamaDekstop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <soap:operation soapAction="http://tempuri.org/GetNikNamaAct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <soap:operation soapAction="http://tempuri.org/RegMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <soap:operation soapAction="http://tempuri.org/GetUserByNIK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <soap:operation soapAction="http://tempuri.org/ClearSessionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <soap:operation soapAction="http://tempuri.org/ClearAllSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <soap:operation soapAction="http://tempuri.org/GetTokenTicketing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <soap:operation soapAction="http://tempuri.org/GetDateTimeServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSetServiceSoap12" type="tns:GetSetServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="startService">
+      <soap12:operation soapAction="http://tempuri.org/startService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <soap12:operation soapAction="http://tempuri.org/startServiceDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <soap12:operation soapAction="http://tempuri.org/initCardUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <soap12:operation soapAction="http://tempuri.org/GetTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <soap12:operation soapAction="http://tempuri.org/SelectDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <soap12:operation soapAction="http://tempuri.org/btnWrite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <soap12:operation soapAction="http://tempuri.org/ListReaders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <soap12:operation soapAction="http://tempuri.org/connectCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <soap12:operation soapAction="http://tempuri.org/submitText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <soap12:operation soapAction="http://tempuri.org/Close" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <soap12:operation soapAction="http://tempuri.org/verifyCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <soap12:operation soapAction="http://tempuri.org/readBlock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputProses">
+      <soap12:operation soapAction="http://tempuri.org/InputProses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputProsesFromCalendar">
+      <soap12:operation soapAction="http://tempuri.org/InputProsesFromCalendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InputMenu">
+      <soap12:operation soapAction="http://tempuri.org/InputMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <soap12:operation soapAction="http://tempuri.org/setMonthRecap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <soap12:operation soapAction="http://tempuri.org/setMonth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <soap12:operation soapAction="http://tempuri.org/GetListOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <soap12:operation soapAction="http://tempuri.org/GetMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <soap12:operation soapAction="http://tempuri.org/RecapOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <soap12:operation soapAction="http://tempuri.org/GetReconcile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <soap12:operation soapAction="http://tempuri.org/CheckToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <soap12:operation soapAction="http://tempuri.org/GetUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDataDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <soap12:operation soapAction="http://tempuri.org/DelMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <soap12:operation soapAction="http://tempuri.org/AddMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <soap12:operation soapAction="http://tempuri.org/CekMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <soap12:operation soapAction="http://tempuri.org/SearchNik" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <soap12:operation soapAction="http://tempuri.org/RegCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <soap12:operation soapAction="http://tempuri.org/RegCardDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <soap12:operation soapAction="http://tempuri.org/DelData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <soap12:operation soapAction="http://tempuri.org/DelOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <soap12:operation soapAction="http://tempuri.org/loginWithCardUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <soap12:operation soapAction="http://tempuri.org/loginWithCardUIDDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <soap12:operation soapAction="http://tempuri.org/loginWithUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <soap12:operation soapAction="http://tempuri.org/loginWithUserNameDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <soap12:operation soapAction="http://tempuri.org/GetMenuBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <soap12:operation soapAction="http://tempuri.org/GetMenuBookingCalendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <soap12:operation soapAction="http://tempuri.org/GetNikNama" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <soap12:operation soapAction="http://tempuri.org/GetNikNamaDekstop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <soap12:operation soapAction="http://tempuri.org/GetNikNamaAct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <soap12:operation soapAction="http://tempuri.org/RegMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <soap12:operation soapAction="http://tempuri.org/GetUserByNIK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <soap12:operation soapAction="http://tempuri.org/ClearSessionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <soap12:operation soapAction="http://tempuri.org/ClearAllSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <soap12:operation soapAction="http://tempuri.org/GetTokenTicketing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <soap12:operation soapAction="http://tempuri.org/GetDateTimeServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSetServiceHttpGet" type="tns:GetSetServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="startService">
+      <http:operation location="/startService" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <http:operation location="/startServiceDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <http:operation location="/initCardUID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <http:operation location="/GetTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <http:operation location="/SelectDevice" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <http:operation location="/btnWrite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <http:operation location="/ListReaders" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <http:operation location="/connectCard" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <http:operation location="/submitText" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <http:operation location="/Close" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <http:operation location="/verifyCard" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <http:operation location="/readBlock" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <http:operation location="/setMonthRecap" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <http:operation location="/setMonth" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <http:operation location="/GetListOrder" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <http:operation location="/GetMenu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <http:operation location="/RecapOrder" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <http:operation location="/GetReconcile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <http:operation location="/CheckToken" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <http:operation location="/GetUserData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <http:operation location="/GetUserDataDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <http:operation location="/DelMenu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <http:operation location="/AddMenu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <http:operation location="/CekMenu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <http:operation location="/SearchNik" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <http:operation location="/RegCard" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <http:operation location="/RegCardDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <http:operation location="/DelData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <http:operation location="/DelOrder" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <http:operation location="/loginWithCardUID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <http:operation location="/loginWithCardUIDDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <http:operation location="/loginWithUserName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <http:operation location="/loginWithUserNameDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <http:operation location="/GetMenuBooking" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <http:operation location="/GetMenuBookingCalendar" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <http:operation location="/GetNikNama" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <http:operation location="/GetNikNamaDekstop" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <http:operation location="/GetNikNamaAct" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <http:operation location="/RegMember" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <http:operation location="/GetUserByNIK" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <http:operation location="/ClearSessionInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <http:operation location="/ClearAllSession" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <http:operation location="/GetTokenTicketing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <http:operation location="/GetDateTimeServer" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSetServiceHttpPost" type="tns:GetSetServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="startService">
+      <http:operation location="/startService" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="startServiceDekstop">
+      <http:operation location="/startServiceDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initCardUID">
+      <http:operation location="/initCardUID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetTable">
+      <http:operation location="/GetTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDevice">
+      <http:operation location="/SelectDevice" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="btnWrite">
+      <http:operation location="/btnWrite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ListReaders">
+      <http:operation location="/ListReaders" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="connectCard">
+      <http:operation location="/connectCard" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitText">
+      <http:operation location="/submitText" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <http:operation location="/Close" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="verifyCard">
+      <http:operation location="/verifyCard" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="readBlock">
+      <http:operation location="/readBlock" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMonthRecap">
+      <http:operation location="/setMonthRecap" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="setMonth">
+      <http:operation location="/setMonth" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <http:operation location="/GetListOrder" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <http:operation location="/GetMenu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RecapOrder">
+      <http:operation location="/RecapOrder" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconcile">
+      <http:operation location="/GetReconcile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="CheckToken">
+      <http:operation location="/CheckToken" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <http:operation location="/GetUserData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDataDekstop">
+      <http:operation location="/GetUserDataDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelMenu">
+      <http:operation location="/DelMenu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddMenu">
+      <http:operation location="/AddMenu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="CekMenu">
+      <http:operation location="/CekMenu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNik">
+      <http:operation location="/SearchNik" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegCard">
+      <http:operation location="/RegCard" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegCardDekstop">
+      <http:operation location="/RegCardDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelData">
+      <http:operation location="/DelData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DelOrder">
+      <http:operation location="/DelOrder" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUID">
+      <http:operation location="/loginWithCardUID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithCardUIDDekstop">
+      <http:operation location="/loginWithCardUIDDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserName">
+      <http:operation location="/loginWithUserName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="loginWithUserNameDekstop">
+      <http:operation location="/loginWithUserNameDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBooking">
+      <http:operation location="/GetMenuBooking" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuBookingCalendar">
+      <http:operation location="/GetMenuBookingCalendar" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNama">
+      <http:operation location="/GetNikNama" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaDekstop">
+      <http:operation location="/GetNikNamaDekstop" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNikNamaAct">
+      <http:operation location="/GetNikNamaAct" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RegMember">
+      <http:operation location="/RegMember" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByNIK">
+      <http:operation location="/GetUserByNIK" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ClearSessionInfo">
+      <http:operation location="/ClearSessionInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllSession">
+      <http:operation location="/ClearAllSession" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenTicketing">
+      <http:operation location="/GetTokenTicketing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDateTimeServer">
+      <http:operation location="/GetDateTimeServer" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetSetService">
+    <wsdl:port name="GetSetServiceSoap" binding="tns:GetSetServiceSoap">
+      <soap:address location="http://localhost:17659/Handler/GetSetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSetServiceSoap12" binding="tns:GetSetServiceSoap12">
+      <soap12:address location="http://localhost:17659/Handler/GetSetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSetServiceHttpGet" binding="tns:GetSetServiceHttpGet">
+      <http:address location="http://localhost:17659/Handler/GetSetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSetServiceHttpPost" binding="tns:GetSetServiceHttpPost">
+      <http:address location="http://localhost:17659/Handler/GetSetService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,19 @@
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.pdb
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.csprojResolveAssemblyReference.cache
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.dll
+C:\Users\Zoey\Documents\Visual Studio 2015\Projects\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.pdb
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.csprojResolveAssemblyReference.cache
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.dll
+D:\Temporary Project\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.csprojResolveAssemblyReference.cache
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\PESEN MAKAN UPDATE 13 JULI\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.dll
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.pdb

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<style>
+    body {margin:0;font-family:Arial}
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+input[type=text] {
+    width: 233px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 15px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:  #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <a style="background-color: #4CAF50" href="dashboard.html">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Admin
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+    <a href="#">Register</a>
+      <a href="FoodMenu.html">Food Menu</a>
+      <a href="#">Reservation</a>
+      <a href="#">Configuration</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">User 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Booking.html">Booking</a>
+      <a href="#">Serving</a>
+    </div>
+  </div> 
+
+   <div class="dropdown">
+    <button class="dropbtn">Vendor
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="#">Recap</a>
+      <a href="#">Reconcile</a>
+    </div>
+  </div> 
+  <a href="index.html" style="float: right; background-color: #333; border-color: transparent"">Logout</a>
+</div>
+</div>
+
+
+<div class="dropdown2">
+  <input onclick="myFunction()" style="margin-top: 50px; margin-left: 50px" type="text" name="Periode" placeholder="Month and Year">
+
+  <div style="margin-left: 50px" id="myDropdown" class="dropdown2-content2">
+    <input style="width: 100%" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#about">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#tools">Tools</a>
+  </div>
+</div>
+
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th style="text-align: center">Date</th>
+      <th style="text-align: center">Day</th>
+      <th style="text-align: center">Food Menu</th>
+      <th style="text-align: center">Time Start</th>
+      <th style="text-align: center">Time End</th>
+      <th style="text-align: center">On/Off Day</th>
+      <th style="text-align: center">Note</th>
+      
+    </tr>
+    <tr>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      
+    </tr>
+    <tr>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+     
+    </tr>
+    <tr>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: center"></td>
+     
+    </tr>
+
+  </table>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+
+
+
+</script>
+
+</body>
+</html>
+
