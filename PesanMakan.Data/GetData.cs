@@ -605,6 +605,7 @@ namespace PesanMakan.Data
             }
 
         }
+
         public static DataTable GetUserDataDB()
         {
             SqlConnection conn = Database.GetConnection();
@@ -623,6 +624,30 @@ namespace PesanMakan.Data
                 return data;
 
 
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public static DataTable GetResetData()
+        {
+            SqlConnection conn = Database.GetConnection();
+            StringBuilder query = new StringBuilder();
+
+            try
+            {
+                conn.Open();
+                DataTable data = new DataTable();
+                SqlCommand cmd = new SqlCommand("application.usp_GetResetDATA", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adapter = Database.GetAdapter(cmd);
+                adapter.Fill(data);
+                data.TableName = "DATA";
+                return data;
             }
             finally
             {

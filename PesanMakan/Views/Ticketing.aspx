@@ -165,7 +165,7 @@
 
         .modal-header {
             padding: 2px 16px;
-            background-color: #5cb85c;
+            background-color: #D32F2F;
             color: white;
         }
 
@@ -173,7 +173,7 @@
 
         .modal-footer {
             padding: 2px 16px;
-            background-color: #5cb85c;
+            background-color: #C62828;
             color: white;
         }
     </style>
@@ -195,18 +195,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="tap-box">
-            <div class="tap-body text-center">
-                <h2 style="text-align:center; color: #0094ac">NFC READER PT. BIO FARMA</h2>
-
-                <h2 class="text-uppercase" style="margin-top:80px"><strong>Tap your ID</strong></h2>
-                <%--<p class="text-muted m-t-30 m-b-30">YOU SEEM TO BE TRYING TO FIND HIS WAY HOME</p>
-                <a href="index.html" class="btn btn-info btn-rounded waves-effect waves-light m-b-40">Back to home</a>--%>
-            </div>
-            <footer class="footer text-center"> 
-                2017-2019 &copy; Layanan Makan <br /> Contact information www.biofarma.co.id
-            </footer>
-        </div>-->
     </section>
 
     <!-- The Modal -->
@@ -290,8 +278,9 @@
             dataType: "text",
 
             success: function (data) {
-                statinit = data;
-                if (statinit == "Tidak Booking") {
+                statinit = data.split("-");
+                
+                if (statinit[0] == "Tidak Booking") {
                     setTimeout(function () {
                         $('#myModal2').modal('hide')
                     }, 2000);
@@ -299,28 +288,28 @@
                     $('#myModal2').modal('show');
 
                 }
-                else if (statinit == "Belum Terdaftar") {
+                else if (statinit[0] == "Belum Terdaftar") {
                     document.getElementById('keterangan').innerHTML = "Anda Belum Terdaftar Dalam Database Pesan Makan Silahkan Daftar Di Bagian SDM";
                     setTimeout(function () {
                         $('#myModal2').modal('hide')
                     }, 2000);
                     $('#myModal2').modal('show');
 
-                } else if (statinit == "Jam Makan Tutup") {
+                } else if (statinit[0] == "Jam Makan Tutup") {
                     document.getElementById('keterangan').innerHTML = "Jam Makan Tutup, Silahkan Hadir Tepat Waktu";
                     setTimeout(function () {
                         $('#myModal2').modal('hide')
                     }, 2000);
                     $('#myModal2').modal('show');
 
-                } else if (statinit == "Print") {
+                } else if (statinit[0] == "Print") {
                     document.getElementById('keterangan').innerHTML = "Tiket Anda Sudah Terprint";
                     setTimeout(function () {
                         $('#myModal2').modal('hide')
                     }, 2000);
                     $('#myModal2').modal('show');
 
-                } else if (statinit == "Tidak Terhubung NFC") {
+                } else if (statinit[0] == "Tidak Terhubung NFC") {
 
                 } else {
                     valuebar = updateToken(valuebar);
@@ -330,11 +319,8 @@
                         modal.style.display = "none";
                     }, 100);
 
-                    //$('#myModal').modal('show');
                     modal.style.display = "block";
                     window.print();
-
-                    //$("#myModal").modal("hide");
                 }
 
             },
@@ -359,7 +345,7 @@
                 d = d.replace('{"d":null}', "");
                 dt = JSON.parse(d).data;
                 if (dt.length > 0) {
-                    valuebar = dt;
+                    valuebar = dt.split("-");
 
                     var date = new Date();
                     var day = date.getDate();
@@ -372,7 +358,9 @@
 
                     tgl = day + '-' + month + '-' + yy + ' ' + hour + ':' + minute + ':' + second;
 
-                    JsBarcode("#barcode", valuebar, {
+
+                    console.log(valuebar[0]);
+                    JsBarcode("#barcode", valuebar[0], {
                         format: "CODE128",
                         lineColor: "#000",
                         width: 3,
@@ -387,7 +375,7 @@
                 $.toast({ icon: 'error', heading: 'Warning!', text: 'Ajax request failed', showHideTransition: 'slide', position: 'bottom-right', hideAfter: 3000 });
             }
         });
-        return valuebar;
+        return valuebar[0];
     }
 
     function myFunction() {

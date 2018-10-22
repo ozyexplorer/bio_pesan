@@ -152,6 +152,9 @@
                             <li>
                                 <a href="Admin_RegMenu.aspx">Menu Makanan</a>
                             </li>
+                            <li>
+                                <a href="Admin_ResetTicket.aspx">Resetter Ticket</a>
+                            </li>
                         </ul>
                         
                     </li>

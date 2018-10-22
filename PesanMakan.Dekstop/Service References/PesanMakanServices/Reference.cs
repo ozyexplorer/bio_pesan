@@ -179,6 +179,27 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetReconcile", ReplyAction="*")]
         System.Threading.Tasks.Task GetReconcileAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalMember", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void TotalMember();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalMember", ReplyAction="*")]
+        System.Threading.Tasks.Task TotalMemberAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalBooking", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void TotalBooking();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalBooking", ReplyAction="*")]
+        System.Threading.Tasks.Task TotalBookingAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalKonfirmasi", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void TotalKonfirmasi();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TotalKonfirmasi", ReplyAction="*")]
+        System.Threading.Tasks.Task TotalKonfirmasiAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CheckToken", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void CheckToken(string token);
@@ -326,6 +347,13 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetNikNamaAct", ReplyAction="*")]
         System.Threading.Tasks.Task GetNikNamaActAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetResetData", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void GetResetData();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetResetData", ReplyAction="*")]
+        System.Threading.Tasks.Task GetResetDataAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetNikNamaActDesktop", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable GetNikNamaActDesktop();
@@ -339,6 +367,13 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/RegMember", ReplyAction="*")]
         System.Threading.Tasks.Task RegMemberAsync(string nik, string nama, string cardID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ResetData", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void ResetData(string nik);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ResetData", ReplyAction="*")]
+        System.Threading.Tasks.Task ResetDataAsync(string nik);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetUserByNIK", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -794,6 +829,30 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
             return base.Channel.GetReconcileAsync();
         }
         
+        public void TotalMember() {
+            base.Channel.TotalMember();
+        }
+        
+        public System.Threading.Tasks.Task TotalMemberAsync() {
+            return base.Channel.TotalMemberAsync();
+        }
+        
+        public void TotalBooking() {
+            base.Channel.TotalBooking();
+        }
+        
+        public System.Threading.Tasks.Task TotalBookingAsync() {
+            return base.Channel.TotalBookingAsync();
+        }
+        
+        public void TotalKonfirmasi() {
+            base.Channel.TotalKonfirmasi();
+        }
+        
+        public System.Threading.Tasks.Task TotalKonfirmasiAsync() {
+            return base.Channel.TotalKonfirmasiAsync();
+        }
+        
         public void CheckToken(string token) {
             base.Channel.CheckToken(token);
         }
@@ -962,6 +1021,14 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
             return base.Channel.GetNikNamaActAsync();
         }
         
+        public void GetResetData() {
+            base.Channel.GetResetData();
+        }
+        
+        public System.Threading.Tasks.Task GetResetDataAsync() {
+            return base.Channel.GetResetDataAsync();
+        }
+        
         public System.Data.DataTable GetNikNamaActDesktop() {
             return base.Channel.GetNikNamaActDesktop();
         }
@@ -976,6 +1043,14 @@ namespace PesanMakan.Dekstop.PesanMakanServices {
         
         public System.Threading.Tasks.Task RegMemberAsync(string nik, string nama, string cardID) {
             return base.Channel.RegMemberAsync(nik, nama, cardID);
+        }
+        
+        public void ResetData(string nik) {
+            base.Channel.ResetData(nik);
+        }
+        
+        public System.Threading.Tasks.Task ResetDataAsync(string nik) {
+            return base.Channel.ResetDataAsync(nik);
         }
         
         public void GetUserByNIK(string pernr) {

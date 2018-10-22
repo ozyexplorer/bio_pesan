@@ -416,6 +416,11 @@ namespace PesanMakan.Business
 
             InsertData.RegMemberDB(nik, nama);
         }
+
+        public static void ResetData(string nik)
+        {
+            InsertData.ResetDataDB(nik);
+        }
         
         public static DataTable GetAllUserData()
         {
@@ -712,6 +717,32 @@ namespace PesanMakan.Business
 
                 obj[0] = table.Rows[i]["PERNR"].ToString();
                 obj[1] = table.Rows[i]["CNAME"].ToString();
+                obj[2] = _action;
+
+                dt.Rows.Add(obj);
+            }
+
+            return dt;
+        }
+
+
+        public static DataTable GetResetData()
+        {
+            DataTable dt = new DataTable("DATA"); ;
+            StringBuilder _table = new StringBuilder();
+            DataTable table = GetData.GetResetData();
+
+            dt.Columns.Add(("NIK"));
+            dt.Columns.Add(("NAMA"));
+            dt.Columns.Add(("ACTION"));
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                string _action = "<input type='button' value='Reset' style='text-align:center; width:50px;'  onclick='Reset(this)' class='btn btn-info btn-xs'></input>";
+                object[] obj = new object[3];
+
+                obj[0] = table.Rows[i]["NIK"].ToString();
+                obj[1] = table.Rows[i]["NAMA"].ToString();
                 obj[2] = _action;
 
                 dt.Rows.Add(obj);

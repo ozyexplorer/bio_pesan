@@ -2309,6 +2309,7 @@
     <Content Include="Views\Admin_RegCard.aspx" />
     <Content Include="Views\Admin_RegMember.aspx" />
     <Content Include="Views\Admin_RegMenu.aspx" />
+    <Content Include="Views\Admin_ResetTicket.aspx" />
     <Content Include="Views\Calendar.aspx" />
     <Content Include="Views\Dashboard.aspx" />
     <Content Include="Views\FullCalendar.aspx" />
@@ -3343,6 +3344,13 @@
     </Compile>
     <Compile Include="Views\Admin_RegMenu.aspx.designer.cs">
       <DependentUpon>Admin_RegMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin_ResetTicket.aspx.cs">
+      <DependentUpon>Admin_ResetTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin_ResetTicket.aspx.designer.cs">
+      <DependentUpon>Admin_ResetTicket.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Calendar.aspx.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>

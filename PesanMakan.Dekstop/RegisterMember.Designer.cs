@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,8 +47,6 @@
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,7 +63,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1407, 103);
+            this.panel1.Size = new System.Drawing.Size(938, 67);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -73,10 +71,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(209)))), ((int)(((byte)(161)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(220, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(147, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1187, 128);
+            this.panel3.Size = new System.Drawing.Size(791, 83);
             this.panel3.TabIndex = 2;
             // 
             // label1
@@ -85,10 +82,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(706, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.label1.Location = new System.Drawing.Point(470, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(471, 60);
+            this.label1.Size = new System.Drawing.Size(310, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRASI MEMBER";
             // 
@@ -98,7 +95,7 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = " Back";
+            this.bunifuFlatButton1.ButtonText = "Back";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -121,9 +118,9 @@
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(220, 103);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(147, 67);
             this.bunifuFlatButton1.TabIndex = 1;
-            this.bunifuFlatButton1.Text = " Back";
+            this.bunifuFlatButton1.Text = "Back";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,10 +130,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(725, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(505, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 48);
+            this.label2.Size = new System.Drawing.Size(55, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "NIK";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -145,10 +141,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(725, 102);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(505, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 48);
+            this.label3.Size = new System.Drawing.Size(80, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nama";
             // 
@@ -156,10 +151,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(725, 157);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(505, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 48);
+            this.label4.Size = new System.Drawing.Size(97, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "Card ID";
             // 
@@ -172,34 +166,37 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 103);
+            this.panel2.Location = new System.Drawing.Point(0, 67);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1407, 246);
+            this.panel2.Size = new System.Drawing.Size(938, 160);
             this.panel2.TabIndex = 7;
             // 
             // txtCardId
             // 
             this.txtCardId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCardId.Location = new System.Drawing.Point(927, 162);
+            this.txtCardId.Location = new System.Drawing.Point(640, 105);
+            this.txtCardId.Margin = new System.Windows.Forms.Padding(2);
             this.txtCardId.Name = "txtCardId";
-            this.txtCardId.Size = new System.Drawing.Size(414, 39);
+            this.txtCardId.Size = new System.Drawing.Size(277, 29);
             this.txtCardId.TabIndex = 9;
             // 
             // txtNama
             // 
             this.txtNama.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.Location = new System.Drawing.Point(927, 106);
+            this.txtNama.Location = new System.Drawing.Point(640, 69);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(2);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(414, 39);
+            this.txtNama.Size = new System.Drawing.Size(277, 29);
             this.txtNama.TabIndex = 8;
             // 
             // txtNik
             // 
             this.txtNik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNik.Location = new System.Drawing.Point(927, 51);
+            this.txtNik.Location = new System.Drawing.Point(640, 33);
+            this.txtNik.Margin = new System.Windows.Forms.Padding(2);
             this.txtNik.Name = "txtNik";
-            this.txtNik.Size = new System.Drawing.Size(414, 39);
+            this.txtNik.Size = new System.Drawing.Size(277, 29);
             this.txtNik.TabIndex = 7;
             // 
             // bunifuFlatButton2
@@ -223,14 +220,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(1061, 0);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(729, 0);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.RoyalBlue;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.CornflowerBlue;
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(93, 48);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(62, 31);
             this.bunifuFlatButton2.TabIndex = 0;
             this.bunifuFlatButton2.Text = "Edit";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,14 +256,14 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 90D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(1179, 0);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnSave.Location = new System.Drawing.Point(808, 0);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(160)))), ((int)(((byte)(71)))));
             this.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(93, 48);
+            this.btnSave.Size = new System.Drawing.Size(62, 31);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Simpan";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -276,39 +273,14 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.btnSave);
-            this.panel4.Controls.Add(this.txtSearch);
             this.panel4.Controls.Add(this.bunifuFlatButton2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 349);
+            this.panel4.Location = new System.Drawing.Point(0, 227);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1407, 109);
+            this.panel4.Size = new System.Drawing.Size(938, 57);
             this.panel4.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1005, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 32);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Search by NIK";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(1173, 59);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(224, 39);
-            this.txtSearch.TabIndex = 29;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dgMember
             // 
@@ -316,8 +288,8 @@
             this.dgMember.AllowUserToOrderColumns = true;
             this.dgMember.AllowUserToResizeColumns = false;
             this.dgMember.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgMember.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -326,60 +298,59 @@
             this.dgMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgMember.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.dgMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(4);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Azure;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgMember.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgMember.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgMember.DoubleBuffered = true;
             this.dgMember.EnableHeadersVisualStyles = false;
             this.dgMember.GridColor = System.Drawing.Color.Gray;
             this.dgMember.HeaderBgColor = System.Drawing.Color.Gainsboro;
             this.dgMember.HeaderForeColor = System.Drawing.Color.Black;
-            this.dgMember.Location = new System.Drawing.Point(43, 494);
+            this.dgMember.Location = new System.Drawing.Point(364, 311);
             this.dgMember.Margin = new System.Windows.Forms.Padding(0);
             this.dgMember.Name = "dgMember";
             this.dgMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgMember.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgMember.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgMember.RowHeadersVisible = false;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.dgMember.RowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.dgMember.Size = new System.Drawing.Size(1233, 238);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dgMember.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgMember.Size = new System.Drawing.Size(268, 155);
             this.dgMember.TabIndex = 0;
             // 
             // RegisterMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1407, 758);
+            this.ClientSize = new System.Drawing.Size(938, 493);
             this.Controls.Add(this.dgMember);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RegisterMember";
             this.Text = "RegisterMember";
             this.Load += new System.EventHandler(this.RegisterMember_Load);
@@ -389,7 +360,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgMember)).EndInit();
             this.ResumeLayout(false);
 
@@ -412,7 +382,5 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnSave;
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgMember;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtSearch;
     }
 }

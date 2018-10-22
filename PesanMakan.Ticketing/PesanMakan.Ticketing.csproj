@@ -33,6 +33,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Barcode, Version=2.0.0.20, Culture=neutral, PublicKeyToken=6dc438ab78a525b3, processorArchitecture=MSIL" />
+    <Reference Include="BarcodeLib.Barcode.WinForms">
+      <HintPath>..\..\..\BarcodeLib_NETBarcode_Trial\BarcodeLib.Barcode.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -95,7 +98,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PesanMakan.Dekstop\PesanMakan.Dekstop.csproj">

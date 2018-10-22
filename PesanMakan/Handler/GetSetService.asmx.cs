@@ -1246,6 +1246,21 @@ namespace PesanMakan.Handler
 
         }
 
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void GetResetData()
+        {
+
+            DataTable d = DataLogic.GetResetData();
+            string JSONString = string.Empty;
+            JSONString = Newtonsoft.Json.JsonConvert.SerializeObject(d);
+            Context.Response.Clear();
+            Context.Response.ContentType = "application/json";
+            Context.Response.Write("{\"data\": " + JSONString + "}");
+
+        }
+
         [WebMethod]
         public DataTable GetNikNamaActDesktop()
         {
@@ -1264,6 +1279,13 @@ namespace PesanMakan.Handler
             }
         }
         #endregion
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void ResetData(string nik)
+        {
+            DataLogic.ResetData(nik);
+        }
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]

@@ -243,6 +243,24 @@
       <s:element name="GetReconcileResponse">
         <s:complexType />
       </s:element>
+      <s:element name="TotalMember">
+        <s:complexType />
+      </s:element>
+      <s:element name="TotalMemberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TotalBooking">
+        <s:complexType />
+      </s:element>
+      <s:element name="TotalBookingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TotalKonfirmasi">
+        <s:complexType />
+      </s:element>
+      <s:element name="TotalKonfirmasiResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="CheckToken">
         <s:complexType>
           <s:sequence>
@@ -476,6 +494,12 @@
       <s:element name="GetNikNamaActResponse">
         <s:complexType />
       </s:element>
+      <s:element name="GetResetData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetResetDataResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="GetNikNamaActDesktop">
         <s:complexType />
       </s:element>
@@ -503,6 +527,16 @@
         </s:complexType>
       </s:element>
       <s:element name="RegMemberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResetData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nik" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResetDataResponse">
         <s:complexType />
       </s:element>
       <s:element name="GetUserByNIK">
@@ -701,6 +735,24 @@
   <wsdl:message name="GetReconcileSoapOut">
     <wsdl:part name="parameters" element="tns:GetReconcileResponse" />
   </wsdl:message>
+  <wsdl:message name="TotalMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:TotalMember" />
+  </wsdl:message>
+  <wsdl:message name="TotalMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:TotalMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="TotalBookingSoapIn">
+    <wsdl:part name="parameters" element="tns:TotalBooking" />
+  </wsdl:message>
+  <wsdl:message name="TotalBookingSoapOut">
+    <wsdl:part name="parameters" element="tns:TotalBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="TotalKonfirmasiSoapIn">
+    <wsdl:part name="parameters" element="tns:TotalKonfirmasi" />
+  </wsdl:message>
+  <wsdl:message name="TotalKonfirmasiSoapOut">
+    <wsdl:part name="parameters" element="tns:TotalKonfirmasiResponse" />
+  </wsdl:message>
   <wsdl:message name="CheckTokenSoapIn">
     <wsdl:part name="parameters" element="tns:CheckToken" />
   </wsdl:message>
@@ -827,6 +879,12 @@
   <wsdl:message name="GetNikNamaActSoapOut">
     <wsdl:part name="parameters" element="tns:GetNikNamaActResponse" />
   </wsdl:message>
+  <wsdl:message name="GetResetDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResetData" />
+  </wsdl:message>
+  <wsdl:message name="GetResetDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResetDataResponse" />
+  </wsdl:message>
   <wsdl:message name="GetNikNamaActDesktopSoapIn">
     <wsdl:part name="parameters" element="tns:GetNikNamaActDesktop" />
   </wsdl:message>
@@ -838,6 +896,12 @@
   </wsdl:message>
   <wsdl:message name="RegMemberSoapOut">
     <wsdl:part name="parameters" element="tns:RegMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResetDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ResetData" />
+  </wsdl:message>
+  <wsdl:message name="ResetDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ResetDataResponse" />
   </wsdl:message>
   <wsdl:message name="GetUserByNIKSoapIn">
     <wsdl:part name="parameters" element="tns:GetUserByNIK" />
@@ -949,6 +1013,12 @@
   <wsdl:message name="RecapOrderHttpGetOut" />
   <wsdl:message name="GetReconcileHttpGetIn" />
   <wsdl:message name="GetReconcileHttpGetOut" />
+  <wsdl:message name="TotalMemberHttpGetIn" />
+  <wsdl:message name="TotalMemberHttpGetOut" />
+  <wsdl:message name="TotalBookingHttpGetIn" />
+  <wsdl:message name="TotalBookingHttpGetOut" />
+  <wsdl:message name="TotalKonfirmasiHttpGetIn" />
+  <wsdl:message name="TotalKonfirmasiHttpGetOut" />
   <wsdl:message name="CheckTokenHttpGetIn">
     <wsdl:part name="token" type="s:string" />
   </wsdl:message>
@@ -1041,6 +1111,8 @@
   </wsdl:message>
   <wsdl:message name="GetNikNamaActHttpGetIn" />
   <wsdl:message name="GetNikNamaActHttpGetOut" />
+  <wsdl:message name="GetResetDataHttpGetIn" />
+  <wsdl:message name="GetResetDataHttpGetOut" />
   <wsdl:message name="GetNikNamaActDesktopHttpGetIn" />
   <wsdl:message name="GetNikNamaActDesktopHttpGetOut">
     <wsdl:part name="Body" element="tns:DataTable" />
@@ -1051,6 +1123,10 @@
     <wsdl:part name="cardID" type="s:string" />
   </wsdl:message>
   <wsdl:message name="RegMemberHttpGetOut" />
+  <wsdl:message name="ResetDataHttpGetIn">
+    <wsdl:part name="nik" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ResetDataHttpGetOut" />
   <wsdl:message name="GetUserByNIKHttpGetIn">
     <wsdl:part name="pernr" type="s:string" />
   </wsdl:message>
@@ -1141,6 +1217,12 @@
   <wsdl:message name="RecapOrderHttpPostOut" />
   <wsdl:message name="GetReconcileHttpPostIn" />
   <wsdl:message name="GetReconcileHttpPostOut" />
+  <wsdl:message name="TotalMemberHttpPostIn" />
+  <wsdl:message name="TotalMemberHttpPostOut" />
+  <wsdl:message name="TotalBookingHttpPostIn" />
+  <wsdl:message name="TotalBookingHttpPostOut" />
+  <wsdl:message name="TotalKonfirmasiHttpPostIn" />
+  <wsdl:message name="TotalKonfirmasiHttpPostOut" />
   <wsdl:message name="CheckTokenHttpPostIn">
     <wsdl:part name="token" type="s:string" />
   </wsdl:message>
@@ -1233,6 +1315,8 @@
   </wsdl:message>
   <wsdl:message name="GetNikNamaActHttpPostIn" />
   <wsdl:message name="GetNikNamaActHttpPostOut" />
+  <wsdl:message name="GetResetDataHttpPostIn" />
+  <wsdl:message name="GetResetDataHttpPostOut" />
   <wsdl:message name="GetNikNamaActDesktopHttpPostIn" />
   <wsdl:message name="GetNikNamaActDesktopHttpPostOut">
     <wsdl:part name="Body" element="tns:DataTable" />
@@ -1243,6 +1327,10 @@
     <wsdl:part name="cardID" type="s:string" />
   </wsdl:message>
   <wsdl:message name="RegMemberHttpPostOut" />
+  <wsdl:message name="ResetDataHttpPostIn">
+    <wsdl:part name="nik" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ResetDataHttpPostOut" />
   <wsdl:message name="GetUserByNIKHttpPostIn">
     <wsdl:part name="pernr" type="s:string" />
   </wsdl:message>
@@ -1352,6 +1440,18 @@
       <wsdl:input message="tns:GetReconcileSoapIn" />
       <wsdl:output message="tns:GetReconcileSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <wsdl:input message="tns:TotalMemberSoapIn" />
+      <wsdl:output message="tns:TotalMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <wsdl:input message="tns:TotalBookingSoapIn" />
+      <wsdl:output message="tns:TotalBookingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <wsdl:input message="tns:TotalKonfirmasiSoapIn" />
+      <wsdl:output message="tns:TotalKonfirmasiSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <wsdl:input message="tns:CheckTokenSoapIn" />
       <wsdl:output message="tns:CheckTokenSoapOut" />
@@ -1436,6 +1536,10 @@
       <wsdl:input message="tns:GetNikNamaActSoapIn" />
       <wsdl:output message="tns:GetNikNamaActSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <wsdl:input message="tns:GetResetDataSoapIn" />
+      <wsdl:output message="tns:GetResetDataSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <wsdl:input message="tns:GetNikNamaActDesktopSoapIn" />
       <wsdl:output message="tns:GetNikNamaActDesktopSoapOut" />
@@ -1443,6 +1547,10 @@
     <wsdl:operation name="RegMember">
       <wsdl:input message="tns:RegMemberSoapIn" />
       <wsdl:output message="tns:RegMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <wsdl:input message="tns:ResetDataSoapIn" />
+      <wsdl:output message="tns:ResetDataSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetUserByNIK">
       <wsdl:input message="tns:GetUserByNIKSoapIn" />
@@ -1550,6 +1658,18 @@
       <wsdl:input message="tns:GetReconcileHttpGetIn" />
       <wsdl:output message="tns:GetReconcileHttpGetOut" />
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <wsdl:input message="tns:TotalMemberHttpGetIn" />
+      <wsdl:output message="tns:TotalMemberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <wsdl:input message="tns:TotalBookingHttpGetIn" />
+      <wsdl:output message="tns:TotalBookingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <wsdl:input message="tns:TotalKonfirmasiHttpGetIn" />
+      <wsdl:output message="tns:TotalKonfirmasiHttpGetOut" />
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <wsdl:input message="tns:CheckTokenHttpGetIn" />
       <wsdl:output message="tns:CheckTokenHttpGetOut" />
@@ -1634,6 +1754,10 @@
       <wsdl:input message="tns:GetNikNamaActHttpGetIn" />
       <wsdl:output message="tns:GetNikNamaActHttpGetOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <wsdl:input message="tns:GetResetDataHttpGetIn" />
+      <wsdl:output message="tns:GetResetDataHttpGetOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <wsdl:input message="tns:GetNikNamaActDesktopHttpGetIn" />
       <wsdl:output message="tns:GetNikNamaActDesktopHttpGetOut" />
@@ -1641,6 +1765,10 @@
     <wsdl:operation name="RegMember">
       <wsdl:input message="tns:RegMemberHttpGetIn" />
       <wsdl:output message="tns:RegMemberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <wsdl:input message="tns:ResetDataHttpGetIn" />
+      <wsdl:output message="tns:ResetDataHttpGetOut" />
     </wsdl:operation>
     <wsdl:operation name="GetUserByNIK">
       <wsdl:input message="tns:GetUserByNIKHttpGetIn" />
@@ -1748,6 +1876,18 @@
       <wsdl:input message="tns:GetReconcileHttpPostIn" />
       <wsdl:output message="tns:GetReconcileHttpPostOut" />
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <wsdl:input message="tns:TotalMemberHttpPostIn" />
+      <wsdl:output message="tns:TotalMemberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <wsdl:input message="tns:TotalBookingHttpPostIn" />
+      <wsdl:output message="tns:TotalBookingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <wsdl:input message="tns:TotalKonfirmasiHttpPostIn" />
+      <wsdl:output message="tns:TotalKonfirmasiHttpPostOut" />
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <wsdl:input message="tns:CheckTokenHttpPostIn" />
       <wsdl:output message="tns:CheckTokenHttpPostOut" />
@@ -1832,6 +1972,10 @@
       <wsdl:input message="tns:GetNikNamaActHttpPostIn" />
       <wsdl:output message="tns:GetNikNamaActHttpPostOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <wsdl:input message="tns:GetResetDataHttpPostIn" />
+      <wsdl:output message="tns:GetResetDataHttpPostOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <wsdl:input message="tns:GetNikNamaActDesktopHttpPostIn" />
       <wsdl:output message="tns:GetNikNamaActDesktopHttpPostOut" />
@@ -1839,6 +1983,10 @@
     <wsdl:operation name="RegMember">
       <wsdl:input message="tns:RegMemberHttpPostIn" />
       <wsdl:output message="tns:RegMemberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <wsdl:input message="tns:ResetDataHttpPostIn" />
+      <wsdl:output message="tns:ResetDataHttpPostOut" />
     </wsdl:operation>
     <wsdl:operation name="GetUserByNIK">
       <wsdl:input message="tns:GetUserByNIKHttpPostIn" />
@@ -2074,6 +2222,33 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <soap:operation soapAction="http://tempuri.org/TotalMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <soap:operation soapAction="http://tempuri.org/TotalBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <soap:operation soapAction="http://tempuri.org/TotalKonfirmasi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <soap:operation soapAction="http://tempuri.org/CheckToken" style="document" />
       <wsdl:input>
@@ -2263,6 +2438,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <soap:operation soapAction="http://tempuri.org/GetResetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <soap:operation soapAction="http://tempuri.org/GetNikNamaActDesktop" style="document" />
       <wsdl:input>
@@ -2274,6 +2458,15 @@
     </wsdl:operation>
     <wsdl:operation name="RegMember">
       <soap:operation soapAction="http://tempuri.org/RegMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <soap:operation soapAction="http://tempuri.org/ResetData" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2545,6 +2738,33 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <soap12:operation soapAction="http://tempuri.org/TotalMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <soap12:operation soapAction="http://tempuri.org/TotalBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <soap12:operation soapAction="http://tempuri.org/TotalKonfirmasi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <soap12:operation soapAction="http://tempuri.org/CheckToken" style="document" />
       <wsdl:input>
@@ -2734,6 +2954,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <soap12:operation soapAction="http://tempuri.org/GetResetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <soap12:operation soapAction="http://tempuri.org/GetNikNamaActDesktop" style="document" />
       <wsdl:input>
@@ -2745,6 +2974,15 @@
     </wsdl:operation>
     <wsdl:operation name="RegMember">
       <soap12:operation soapAction="http://tempuri.org/RegMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <soap12:operation soapAction="http://tempuri.org/ResetData" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -2965,6 +3203,27 @@
       </wsdl:input>
       <wsdl:output />
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <http:operation location="/TotalMember" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <http:operation location="/TotalBooking" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <http:operation location="/TotalKonfirmasi" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <http:operation location="/CheckToken" />
       <wsdl:input>
@@ -3124,6 +3383,13 @@
       </wsdl:input>
       <wsdl:output />
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <http:operation location="/GetResetData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <http:operation location="/GetNikNamaActDesktop" />
       <wsdl:input>
@@ -3135,6 +3401,13 @@
     </wsdl:operation>
     <wsdl:operation name="RegMember">
       <http:operation location="/RegMember" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <http:operation location="/ResetData" />
       <wsdl:input>
         <http:urlEncoded />
       </wsdl:input>
@@ -3343,6 +3616,27 @@
       </wsdl:input>
       <wsdl:output />
     </wsdl:operation>
+    <wsdl:operation name="TotalMember">
+      <http:operation location="/TotalMember" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="TotalBooking">
+      <http:operation location="/TotalBooking" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="TotalKonfirmasi">
+      <http:operation location="/TotalKonfirmasi" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
     <wsdl:operation name="CheckToken">
       <http:operation location="/CheckToken" />
       <wsdl:input>
@@ -3502,6 +3796,13 @@
       </wsdl:input>
       <wsdl:output />
     </wsdl:operation>
+    <wsdl:operation name="GetResetData">
+      <http:operation location="/GetResetData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
     <wsdl:operation name="GetNikNamaActDesktop">
       <http:operation location="/GetNikNamaActDesktop" />
       <wsdl:input>
@@ -3513,6 +3814,13 @@
     </wsdl:operation>
     <wsdl:operation name="RegMember">
       <http:operation location="/RegMember" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ResetData">
+      <http:operation location="/ResetData" />
       <wsdl:input>
         <mime:content type="application/x-www-form-urlencoded" />
       </wsdl:input>

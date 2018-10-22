@@ -381,7 +381,7 @@ namespace PesanMakan.Data
                     if (data3.Rows.Count != 0)
                     {*/
 
-                        query4.Append(" SELECT TOKEN FROM dbo.NFC_ORDER ");
+                        query4.Append(" SELECT NAMA FROM dbo.NFC_ORDER ");
                         query4.Append("WHERE NIK = '" + nik + "' AND bokda =CAST(GETDATE() AS DATE) AND ISDELETED = 0 AND FLAGPRINTED = 0 ");
 
                         try
@@ -403,6 +403,7 @@ namespace PesanMakan.Data
                         if (data4.Rows.Count != 0)
                         {
                             string token = data2.Rows[0]["TOKEN"].ToString();
+                            string nama = data4.Rows[0]["NAMA"].ToString();
 
                             query5.Append(" UPDATE dbo.NFC_ORDER ");
                             query5.Append(" SET FLAGEAT = 1, FLAGPRINTED = 1, TIMEIN = CONVERT(varchar(10), GETDATE(), 108) ");
@@ -419,7 +420,7 @@ namespace PesanMakan.Data
                                 conn.Close();
                             }
 
-                            return token;
+                            return token+"-"+nama;
 
                         }
                         else
@@ -711,6 +712,31 @@ namespace PesanMakan.Data
                 SqlCommand comm = new SqlCommand(query2.ToString(), conn);
                 comm.ExecuteNonQuery();
             }
+            finally
+            {
+                //Finally Close the Connection...
+                conn.Close();
+            }
+        }
+
+
+        public static void ResetDataDB(string nik)
+        {
+            SqlConnection conn = Database.GetConnection();
+
+            StringBuilder query = new StringBuilder();
+
+            query.Append(" UPDATE dbo.NFC_ORDER ");
+            query.Append(" SET FLAGEAT = 0, FLAGPRINTED = 0, TIMEIN = CONVERT(varchar(10), GETDATE(), 108) ");
+            query.Append("WHERE NIK = '" + nik + "' ");
+
+            try
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand(query.ToString(), conn);
+                comm.ExecuteNonQuery();
+            }
+
             finally
             {
                 //Finally Close the Connection...

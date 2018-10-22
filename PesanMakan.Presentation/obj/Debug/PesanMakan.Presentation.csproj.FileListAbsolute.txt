@@ -12,3 +12,4 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Present
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\bin\Debug\PesanMakan.Presentation.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.dll
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Presentation\obj\Debug\PesanMakan.Presentation.csprojResolveAssemblyReference.cache

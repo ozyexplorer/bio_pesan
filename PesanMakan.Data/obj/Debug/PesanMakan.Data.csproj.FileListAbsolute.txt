@@ -17,3 +17,4 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\bi
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\bin\Debug\PesanMakan.Data.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.dll
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Data\obj\Debug\PesanMakan.Data.csprojResolveAssemblyReference.cache

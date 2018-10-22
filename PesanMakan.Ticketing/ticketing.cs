@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-using Limilabs.Barcode;
+using BarcodeLib.Barcode.WinForms;
 using System.Drawing.Imaging;
 using PesanMakan.Ticketing.PesanMakanService;
+using BarcodeLib.Barcode;
 
 namespace PesanMakan.Ticketing
 {
@@ -35,11 +36,54 @@ namespace PesanMakan.Ticketing
             this.myField = value;
         }
 
+        public String getNama()
+        {
+            //include validation, logic, logging or whatever you like here
+            return this.myNama;
+        }
+        public void setNama(String value)
+        {
+            //include more logic
+            this.myNama = value;
+        }
+
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
                 string stat = getMyField();
+                string nama = getNama();
                 e.Graphics.DrawString(stat, new Font("Times New Roman", 14, FontStyle.Bold), Brushes.Black, new PointF(100, 100));
-            
+                
+                BarcodeLib.Barcode.Linear code128 = new BarcodeLib.Barcode.Linear();
+                 code128.Type = BarcodeType.CODE128;
+                 code128.Data = stat;
+
+                 code128.AddCheckSum = true;
+                 code128.UOM = UnitOfMeasure.PIXEL;
+
+                 // Set Code 128 barcode image size and quiet zones.
+                 code128.BarWidth = 1;
+                 code128.BarHeight = 75;
+                 code128.BottomMargin = 10;
+                 code128.TopMargin = 10;
+                 code128.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+   
+                 // More Code 128 barcode settings here, like image color, font, human-readable text font etc.
+
+                 // save barcode image into your system
+                 code128.drawBarcode("hiks1.jpg");
+    
+              
+                    Image newImage = Image.FromFile("hiks1.jpg");
+
+                    float x = 90.0F;
+                    float y = 30.0F;
+                    // Draw image to screen.
+                    e.Graphics.DrawImage(newImage, x, y);
+                    e.Graphics.DrawString(nama, new Font("Times New Roman", 13, FontStyle.Bold), Brushes.Black, new PointF(60, 10));
+
+                    string tanggal = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+                    e.Graphics.DrawString(tanggal, new Font("Times New Roman", 12), Brushes.Black, new PointF(75, 150));
+                    
         }
 
         private Timer timer1;
@@ -47,7 +91,7 @@ namespace PesanMakan.Ticketing
         {
             timer1 = new Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 3000; // in miliseconds
+            timer1.Interval = 2000; // in miliseconds
             timer1.Start();
         }
 
@@ -57,7 +101,12 @@ namespace PesanMakan.Ticketing
 
             if (objService.startServiceDekstop() == "1")
             {
-                string stat = objService.startServiceTicketing();
+                string token = objService.startServiceTicketing();
+
+                string[] tokensplit = token.Split('-');
+                string stat = tokensplit[0];
+                string nama = tokensplit[1];
+
 
                 if (stat == "Tidak Booking"){
                     MessageBox.Show("Tidak Booking");
@@ -77,8 +126,9 @@ namespace PesanMakan.Ticketing
                 else 
                 {
                     setMyField(stat);
-                    if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
-                        printDocument1.Print();
+                    setNama(nama);
+                    printDocument1.Print();
+
                     //MessageBox.Show(stat);
                 }
             }
@@ -99,6 +149,6 @@ namespace PesanMakan.Ticketing
 
         }
 
-        
+        public string myNama { get; set; }
     }
 }

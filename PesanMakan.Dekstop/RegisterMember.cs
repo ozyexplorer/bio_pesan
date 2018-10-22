@@ -53,6 +53,16 @@ namespace PesanMakan.Desktop
             }
         }
 
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             Dashboard objDashboard = new Dashboard();
@@ -68,29 +78,6 @@ namespace PesanMakan.Desktop
             objService1.RegMember(txtNik.Text, txtNama.Text, txtCardId.Text); 
             MessageBox.Show("Data Berhasil Dimasukan");
             Show();
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            GetSetServiceSoapClient objService = new GetSetServiceSoapClient();
-
-            DataTable dsReturn = new DataTable();
-
-            if (txtSearch.Text != "")
-            {
-                dsReturn = objService.GetSearchDataDekstop(txtSearch.Text);
-                dgMember.DataSource = dsReturn;
-                dgMember.Columns[2].Visible = false;
-            }
-            else
-            {
-                Show();
-            }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -10,3 +10,4 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Ticketi
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Ticketing\bin\Debug\PesanMakan.Dekstop.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Ticketing\obj\Debug\PesanMakan.Ticketing.exe
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Ticketing\obj\Debug\PesanMakan.Ticketing.pdb
+D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Ticketing\bin\Debug\BarcodeLib.Barcode.WinForms.dll
