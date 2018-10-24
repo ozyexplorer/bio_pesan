@@ -104,3 +104,31 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Bar
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\obj\Debug\PesanMakan.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.dll
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.dll.config
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\AspNet.ScriptManager.jQuery.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\EntityFramework.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Newtonsoft.Json.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Business.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Data.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Presentation.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\System.Web.Providers.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\BarcodeLib.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Biofarma.Service.ActiveDirectory.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Business.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Data.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\PesanMakan.Presentation.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Newtonsoft.Json.xml
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\EntityFramework.xml
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Project\Biofarma\bio_pesan\PesanMakan\bin\BarcodeLib.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan\obj\Debug\PesanMakan.csprojResolveAssemblyReference.cache
+E:\Project\Biofarma\bio_pesan\PesanMakan\obj\Debug\PesanMakan.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan\obj\Debug\PesanMakan.pdb

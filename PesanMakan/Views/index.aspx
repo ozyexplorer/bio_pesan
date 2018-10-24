@@ -41,18 +41,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-
-				</button>
-				<a class="navbar-brand" href="#">
-					<img style="border-radius: 10%;" src="../images/biofarma_1.jpg" class="hidden-xs" alt="">
-					<h3 class="visible-xs">Bio Farma</h3>
-				</a>
+                <img src="../images/biofarma_1.jpg" width="125px" height="50px" alt="Logo"/>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -79,9 +68,9 @@
                     <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>SELAMAT DATANG <br/>DI PESAN MAKAN APPS</h2>
-                            <br>
+                            <br/>
                             <p style="color: white;">Silahkan pilih menu login yang diinginkan</p>
-                            <br>
+                            <br/>
                             <div class="">
                                 <a class="btn btn-1 btn-sm" href="Login.aspx">TAP CARD</a><a class="btn btn-1 btn-sm" href="UserLogin.aspx">USERNAME</a>
 							</div>
@@ -94,24 +83,24 @@
                     <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>SELAMAT DATANG <br/>DI PESAN MAKAN APPS</h2>
-                            <br>
+                            <br/>
                             <p style="color: white;">Silahkan pilih menu login yang diinginkan</p>
                             <br/>
                             <div class="">
-                                <a class="btn btn-1 btn-sm" href="#about">TAP CARD</a><a class="btn btn-1 btn-sm" href="#works">USERNAME</a>
+                                <a class="btn btn-1 btn-sm" href="Login.aspx">TAP CARD</a><a class="btn btn-1 btn-sm" href="UserLogin.aspx">USERNAME</a>
 							</div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="../images/3.jpg" alt="Third slide">
+			    	<img src="../images/3.jpg" alt="Third slide"/>
 			    	<!-- Static Header -->
-                    <div class="header-text hidden-xs">
+                    <div class="header-text">
                         <div class="col-md-12 text-center">
                             <h2>SELAMAT DATANG <br/>DI PESAN MAKAN APPS</h2>
-                            <br>
+                            <br/>
                             <p style="color: white;">Silahkan pilih menu login yang diinginkan</p>
-                            <br>
+                            <br/>
                             <div class="">
                                 <a class="btn btn-1 btn-sm" href="Login.aspx">TAP CARD</a><a class="btn btn-1 btn-sm" href="UserLogin.aspx">USERNAME</a>
 							</div>

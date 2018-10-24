@@ -34,3 +34,12 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Busines
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\PesanMakan.Business\bin\Debug\BarcodeLib.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\PesanMakan.Business.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\PesanMakan.Business.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\BarcodeLib.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\PesanMakan.Data.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\PesanMakan.Data.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\bin\Debug\BarcodeLib.pdb
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\obj\Debug\PesanMakan.Business.csprojResolveAssemblyReference.cache
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\obj\Debug\PesanMakan.Business.dll
+E:\Project\Biofarma\bio_pesan\PesanMakan.Business\obj\Debug\PesanMakan.Business.pdb

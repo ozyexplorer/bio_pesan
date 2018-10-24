@@ -32,3 +32,19 @@ D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\Biofarma.Service.A
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.dll
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.pdb
 D:\belajar\web\asp.net\Design Tampilan Pesan Makan\PesanMakan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.csprojResolveAssemblyReference.cache
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\Biofarma.Service.ActiveDirectory.dll.config
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\Biofarma.Service.ActiveDirectory.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\Biofarma.Service.ActiveDirectory.pdb
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\Microsoft.CSharp.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.Configuration.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.Data.DataSetExtensions.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.Data.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.DirectoryServices.AccountManagement.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.DirectoryServices.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.DirectoryServices.Protocols.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.Xml.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\bin\Debug\System.Xml.Linq.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.csprojResolveAssemblyReference.cache
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.dll
+E:\Project\Biofarma\bio_pesan\Biofarma.Service.ActiveDirectory\obj\Debug\Biofarma.Service.ActiveDirectory.pdb
